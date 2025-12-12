@@ -3,9 +3,121 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Alla's Protfolio</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Zain:ital,wght@0,200;0,300;0,400;0,700;0,800;0,900;1,300;1,400&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/94483a01fc.js" crossorigin="anonymous"></script>
 </head>
+
+<!-- navigation bar -->
+<nav class = "inline-flex">
+    <h1 class="item">Alla's Portfolio</h1>
+    <div class="item right-align">    
+        <a class="nav-link" href="#home">Home</a>
+        <a class="nav-link" href="#about">About</a>
+        <a class="nav-link" href="#projects">Projects</a>
+    </div>
+</nav>
+
+<!-- page body -->
 <body>
-    
+    <section id="home">
+        <img id="image" class="hero-image" src="home_bg.jpg" alt="Alla under a giant tree"/>
+        <div class = "hero-text">
+            <h2 class="hero-head">Alla Romanovsky</h2>
+            <h3 class="hero-sub">video editor | application developer</h3>
+            <a href="#projects" class="jump-button">See My Work</a>
+        </div>
+    </section>
+
+    <!-- about me section -->
+    <section id="about">
+        <h4>About Me</h4>
+        <div class="about-grid">
+            <div class="about-text">
+                <p>I am an experienced digital video editor and a burgeoning application developer, hoping to combine those skills in the future. I'm also an avid home cook and a dumpling eating champ.</p> 
+            </div>
+            <div class="about-image-container">
+                <img class="about-image" src="about_pic.jpg" alt="Alla sitting in a nook of books"/>
+            </div>
+        </div>
+    </section>
+
+    <!-- projects section -->
+    <section id="projects">
+        <h4>My Projects</h4>
+        <div class="project-grid">
+            <div class="video project-card">
+                <div class="project-preview">
+                    <iframe title="How to Make a Blackberry Cream Cheese-Stuffed Christmas Tree Topped With Nutella" src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2FRachaelRayShow%2Fvideos%2F1317939408388321%2F&show_text=false&t=0" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowFullScreen="true"></iframe>
+                </div>
+                <div class="project-text">
+                    <a href="https://www.facebook.com/RachaelRayShow/videos/1317939408388321/" target="_blank"><h5 class="project-head">Rachael Ray Show x Nutella</h5></a>
+                    <p class="project-description">How to Make a Blackberry Cream Cheese-Stuffed Christmas Tree Topped With Nutella</p>
+                    <div class="project-tools">
+                        <p class="tool">Avid Media Composer</p>
+                        <p class="tool">Adobe After Effects</p>
+                        <p class="tool">Adobe Photoshop</p>
+                        <p class="tool">Adobe Illustrator</p>
+                    </div>
+                </div>
+            </div>
+                        <div class="video project-card">
+                <div class="project-preview">
+                    <iframe src="https://www.youtube.com/embed/cKCPdcjRDD0?si=Fkn1w2nqBu9deeod" title="Superformance Shelby Daytona Test Drive" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+                <div class="project-text">
+                    <a class="project-head" target="_blank" href="https://www.foxnews.com/auto/superformance-shelby-daytona-test-drive"><h5 class="project-head">Fox Car Report</h5></a>
+                    <p class="project-description">Gary Gastelu test drives a superformance Shelby Daytona</p>
+                    <div class="project-tools">
+                        <p class="tool">Adobe Premiere</p>
+                        <p class="tool">Adobe After Effects</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="app project-card">
+                <div class="project-preview">
+                    <a href="https://github.com/moralla/day87-brick-breaker"><image class="project-image bottom-view" src="brick-breaker.JPG" alt="screenshot of brick breaker game"/></a>
+                </div>
+                <div class="project-text">
+                    <a href="https://github.com/moralla/day87-brick-breaker"><h5 class="project-head">Brick Breaker Game</h5></a>
+                    <p class="project-description">A game with a keyboard arrow controlled paddle that bounces a brick breaking ball.</p>
+                    <div class="project-tools">
+                        <p class="tool">Python</p>
+                        <p class="tool">turtle</p>
+                    </div>
+                </div>
+            </div>
+            <div class="app project-card">
+                <div class="project-preview">
+                    <a href="https://github.com/moralla/day86-typing-test"><image class="project-image top-view" src="type_test.JPG" alt="screenshot of typing test"></image></a>
+                </div>
+                <div class="project-text">
+                    <a href="https://github.com/moralla/day86-typing-test"><h5 class="project-head">Typing Test</h5></a>
+                    <p class="project-description">One minut speed and accuracy typing test using exerpts from Jane Austen's <em>Pride & Prejudice</em>.</p>
+                    <div class="project-tools">
+                        <p class="tool">Python</p>
+                        <p class="tool">tkinter</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 </body>
+
+<!-- footer -->
+<footer>
+    <div class="inline-flex">
+        <div id="social" class="item">
+            <a href="https://www.linkedin.com/in/alla-romanovsky/" target="_blank"><i class="fa-brands fa-square-linkedin fa-2xl"></i></a>
+            <a href="https://github.com/moralla" target="_blank"><i class="fa-brands fa-square-github fa-2xl"></i></a>
+        </div>
+        <div class="item right-align">
+            <h6>© 2025 Alla Romanovsky.  All rights reserved.</h6>
+        </div>
+    </div>
+</footer>
 </html>
